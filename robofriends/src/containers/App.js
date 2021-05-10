@@ -4,6 +4,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Header from '../components/Header';
 import './App.css'
 
 import { setSearchField, requestRobots } from "../actions";
@@ -42,7 +43,7 @@ function App(props) {
     } else {
         return (
             <div className='tc' >
-                <h1 className='f1'>RoboFriends</h1>
+                <Header />
                 <button onClick={() => setCount(count + 1)}>Click Me!</button>
                 <SearchBox searchChange={onSearchChange} />
                 <Scroll>

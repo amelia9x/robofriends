@@ -1,4 +1,6 @@
 const SearchBox = ({ searchField, searchChange }) => {
+    console.log('SearchBox')
+
     return (
         <div className='pa2'>
             <input
